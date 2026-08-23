@@ -53,7 +53,7 @@
   :source/dataset "cloud-itonami-lei-facts"
   :source/url "https://api.gleif.org/api/v1/lei-records/549300FC3G3YU2FBZD92"
   :source/http-status 200
-  :source/retrieved-at "2026-08-23T14:58:59.162Z"
+  :source/retrieved-at "2026-08-23T15:54:24.506Z"
   :source/golden-copy-publish-date "2026-08-23T00:00:00Z"
   :source/note "Entity status and registration status are two different fields and are recorded separately: an ACTIVE company can hold a LAPSED LEI registration."}
 
@@ -66,7 +66,7 @@
   :source/dataset "cloud-itonami-lei-facts"
   :source/url "https://api.gleif.org/api/v1/lei-records/549300FC3G3YU2FBZD92/isins"
   :source/http-status 200
-  :source/retrieved-at "2026-08-23T14:58:59.162Z"
+  :source/retrieved-at "2026-08-23T15:54:24.506Z"
   :source/golden-copy-publish-date "2026-08-23T00:00:00Z"
   :source/note "Count of instrument identifiers GLEIF maps to this LEI, read from meta.pagination.total of the cited page. The individual ISINs are deliberately not mirrored into this repository: at this issuer's volume they turn over as instruments mature and are issued, which would make this check red for reasons that are not 'the citation broke'. Walk the cited URL's page range to enumerate them. This is a count, not a share count."}
 
@@ -79,7 +79,7 @@
   :source/dataset "cloud-itonami-lei-facts"
   :source/url "https://api.gleif.org/api/v1/lei-records/549300FC3G3YU2FBZD92/managing-lou"
   :source/http-status 200
-  :source/retrieved-at "2026-08-23T14:58:59.162Z"
+  :source/retrieved-at "2026-08-23T15:54:24.506Z"
   :source/golden-copy-publish-date "2026-08-23T00:00:00Z"
   :source/note "The Local Operating Unit that issues and maintains this LEI."}
 
@@ -94,7 +94,7 @@
   :source/dataset "cloud-itonami-lei-facts"
   :source/url "https://api.gleif.org/api/v1/lei-records/549300FC3G3YU2FBZD92/lei-issuer"
   :source/http-status 200
-  :source/retrieved-at "2026-08-23T14:58:59.162Z"
+  :source/retrieved-at "2026-08-23T15:54:24.506Z"
   :source/golden-copy-publish-date "2026-08-23T00:00:00Z"
   :source/note "GLEIF's accreditation of the LOU named above, as an issuer of LEIs."}
 
@@ -107,12 +107,14 @@
   :authority/organization-name "Division of Corporations, Department of State"
   :authority/local-organization-name "Division of Corporations, Department of State"
   :authority/website "https://corp.delaware.gov/"
-  :authority/country "United States of America"
-  :authority/jurisdiction "Delaware"
+  :authority/country-codes ["US"]
+  :authority/countries ["United States of America"]
+  :authority/jurisdictions ["Delaware"]
+  :authority/jurisdiction-count 1
   :source/dataset "cloud-itonami-lei-facts"
   :source/url "https://api.gleif.org/api/v1/registration-authorities/RA000602"
   :source/http-status 200
-  :source/retrieved-at "2026-08-23T14:58:59.162Z"
+  :source/retrieved-at "2026-08-23T15:54:24.506Z"
   :source/note "Resolves :company/registration-authority-id to the national register that corroborated the record."}
 
  {:fact/id "iso-20275-entity-legal-form"
@@ -128,7 +130,7 @@
   :source/dataset "cloud-itonami-lei-facts"
   :source/url "https://api.gleif.org/api/v1/entity-legal-forms/XTIQ"
   :source/http-status 200
-  :source/retrieved-at "2026-08-23T14:58:59.162Z"
+  :source/retrieved-at "2026-08-23T15:54:24.506Z"
   :source/note "Resolves :company/entity-legal-form-id under ISO 20275."}
 
  {:fact/id "gleif-direct-parent-reporting-exception"
@@ -139,7 +141,7 @@
   :source/dataset "cloud-itonami-lei-facts"
   :source/url "https://api.gleif.org/api/v1/lei-records/549300FC3G3YU2FBZD92/direct-parent-reporting-exception"
   :source/http-status 200
-  :source/retrieved-at "2026-08-23T14:58:59.162Z"
+  :source/retrieved-at "2026-08-23T15:54:24.506Z"
   :source/golden-copy-publish-date "2026-08-23T00:00:00Z"
   :source/note "Why no parent of this category is reported."}
 
@@ -151,7 +153,7 @@
   :source/dataset "cloud-itonami-lei-facts"
   :source/url "https://api.gleif.org/api/v1/lei-records/549300FC3G3YU2FBZD92/ultimate-parent-reporting-exception"
   :source/http-status 200
-  :source/retrieved-at "2026-08-23T14:58:59.162Z"
+  :source/retrieved-at "2026-08-23T15:54:24.506Z"
   :source/golden-copy-publish-date "2026-08-23T00:00:00Z"
   :source/note "Why no parent of this category is reported."}
 
@@ -162,7 +164,7 @@
   :source/dataset "cloud-itonami-lei-facts"
   :source/url "https://api.gleif.org/api/v1/lei-records/549300FC3G3YU2FBZD92/direct-children?page%5Bnumber%5D=1&page%5Bsize%5D=15"
   :source/http-status 200
-  :source/retrieved-at "2026-08-23T14:58:59.162Z"
+  :source/retrieved-at "2026-08-23T15:54:24.506Z"
   :source/golden-copy-publish-date "2026-08-23T00:00:00Z"
   :source/note "How many entities GLEIF records as directly consolidated by this one, read from meta.pagination.total. Zero here is a measured zero, not an unasked question. Each child, if any, is recorded as its own :fact/kind :direct-child entity below."}
 
@@ -177,7 +179,7 @@
   :source/dataset "cloud-itonami-lei-facts"
   :source/url "https://api.gleif.org/api/v1/lei-records/549300FC3G3YU2FBZD92/direct-children?page%5Bnumber%5D=1&page%5Bsize%5D=15"
   :source/http-status 200
-  :source/retrieved-at "2026-08-23T14:58:59.162Z"
+  :source/retrieved-at "2026-08-23T15:54:24.506Z"
   :source/golden-copy-publish-date "2026-08-23T00:00:00Z"}
 
  {:fact/id "gleif-direct-child-549300zw53g2tufw5t39"
@@ -191,7 +193,7 @@
   :source/dataset "cloud-itonami-lei-facts"
   :source/url "https://api.gleif.org/api/v1/lei-records/549300FC3G3YU2FBZD92/direct-children?page%5Bnumber%5D=1&page%5Bsize%5D=15"
   :source/http-status 200
-  :source/retrieved-at "2026-08-23T14:58:59.162Z"
+  :source/retrieved-at "2026-08-23T15:54:24.506Z"
   :source/golden-copy-publish-date "2026-08-23T00:00:00Z"}
 
  {:fact/id "gleif-direct-child-5ladc78jbg2bmzd5xf57"
@@ -205,7 +207,7 @@
   :source/dataset "cloud-itonami-lei-facts"
   :source/url "https://api.gleif.org/api/v1/lei-records/549300FC3G3YU2FBZD92/direct-children?page%5Bnumber%5D=1&page%5Bsize%5D=15"
   :source/http-status 200
-  :source/retrieved-at "2026-08-23T14:58:59.162Z"
+  :source/retrieved-at "2026-08-23T15:54:24.506Z"
   :source/golden-copy-publish-date "2026-08-23T00:00:00Z"}
 
  {:fact/id "gleif-direct-child-lnz0j6yz5sc6iliru850"
@@ -219,7 +221,7 @@
   :source/dataset "cloud-itonami-lei-facts"
   :source/url "https://api.gleif.org/api/v1/lei-records/549300FC3G3YU2FBZD92/direct-children?page%5Bnumber%5D=1&page%5Bsize%5D=15"
   :source/http-status 200
-  :source/retrieved-at "2026-08-23T14:58:59.162Z"
+  :source/retrieved-at "2026-08-23T15:54:24.506Z"
   :source/golden-copy-publish-date "2026-08-23T00:00:00Z"}
 
  {:fact/id "gleif-direct-child-d981x4z4rws7pdmjuz03"
@@ -233,7 +235,7 @@
   :source/dataset "cloud-itonami-lei-facts"
   :source/url "https://api.gleif.org/api/v1/lei-records/549300FC3G3YU2FBZD92/direct-children?page%5Bnumber%5D=1&page%5Bsize%5D=15"
   :source/http-status 200
-  :source/retrieved-at "2026-08-23T14:58:59.162Z"
+  :source/retrieved-at "2026-08-23T15:54:24.506Z"
   :source/golden-copy-publish-date "2026-08-23T00:00:00Z"}
 
  {:fact/id "gleif-direct-child-0rl818elfohp5jhofu19"
@@ -247,5 +249,5 @@
   :source/dataset "cloud-itonami-lei-facts"
   :source/url "https://api.gleif.org/api/v1/lei-records/549300FC3G3YU2FBZD92/direct-children?page%5Bnumber%5D=1&page%5Bsize%5D=15"
   :source/http-status 200
-  :source/retrieved-at "2026-08-23T14:58:59.162Z"
+  :source/retrieved-at "2026-08-23T15:54:24.506Z"
   :source/golden-copy-publish-date "2026-08-23T00:00:00Z"}]
